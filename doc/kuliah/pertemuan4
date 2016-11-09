@@ -1,0 +1,24 @@
+Latar Belakang
+
+Pada kesempatan kali ini kita akan membahas tentang apa itu data Geospasial, lalu apa yang dimaksud dengan retrieve data, shp, dan dbf. Langsung saja kita bahas apa itu data Geospasial, Geospasial merupakan suatu ilmu pengetahuan yang mempelajari tentang titik kodinat dari peta bumi. Lalu di dalam Geospasial juga dapat manipulasi data dan menghitung record pada fil.shp , dan pembahasan sekarang tentang class retrieve data geospasial ada 2 data pada shp dan dbf.
+
+
+
+Pembahasan
+
+Pertama retrieve data, adalah melakukan select atau biasa di sebut juga dengan view data pada file, adapun file nya terbagi menjadi dua, yaitu dbf dan geometrik dari file shp. Retrieve data juga dapat memanipulasi data yang di gunakan guna melihat isi data yang ada pada geospasial berupa data vektor yang berbentuk shapefile.
+
+SHP adalah bentuk file yang tersimpan dalam shapefile yang dapat digunakan untuk menyimpan data dari geometri. Dalam file shp juga memiliki data data yaitu Point, Bbox, dan Shapetype.
+
+DBF yaitu suatu file yang dapat meniympan file tabular dan juga menyimpan data attribut. DBF juga sangat sesuai dengan program pengolah data lain, yang bermunculan karena ketenaran dari format berkas DBF itu sendiri.
+
+
+
+Kesimpulan
+
+Dalam data retrieve ini kita dapat melakukan select/view dan menghitung jumlah record. Dengan mendapatkan data shp ini kita juga belum tentu kita dapat melihat data tersebut namun kita harus menggunakan aplikasi seperti Qgis dan Python.
+
+Saran
+
+Supaya lebih memahami materi materi tentang sistem informasi geografis dan juga dapat melakukan praktikum tentang materi yang sudah di jelaskan di atas, yaitu dapat melakukan manipulasi data geospasial.
+
