@@ -1,0 +1,46 @@
+Latar Belakang
+Geospasial merupakan suatu hal yang sangat penting dalam pembelajaran geografi. Karena di pembelajaran geografi, kita selalu mengutamakan pemahaman tentang spasial, mengapa di bilang begitu? Itu karena merupakan sebuah ciri yang bisa di bandingkan dengan pembelajaran yang lainnya. Penerapan nya perlu diupayakan sesuai dengan khaidah dan esensi ilmu geografis itu sendiri. 
+Di dalam geospasial itu sendiri terdapat dua data di geospasial pada DBF dan SHP. kita akan menambahkan data dalam bentuk plygon, polyline dan poin. 
+
+Pembahasan 
+Retrieve data geospasial adalah merupakan suatu cara untuk melakukan select/view, data record dari file dbf geometri dari file shp. 
+
+Menambahkan data geospasial
+•	Import Shapefile
+•	a = shapefile.writer()
+
+disini Shp file berisi geometri. Contohnya :
+•	a.point (x,y)
+•	a.poly [(x,y),(x,y)]
+sedangkan dbf file berisi tabel. Contohnya : 
+•	a.field(‘namafolder’,’C’,’4’)
+•	a.record(‘BDG’)
+disimpan menggunakan method. Contohnya :
+•	a.save(‘file.shp’)
+
+menambahkan data berbentuk poin ke dalam SHP dan berdasarkan format ESRI=1
+•	a.poly[(a,b),(c,d)]
+
+memasukan data geospasial berbentuk polygon dan polyline
+•	a.field (‘kota’,’C’,’40’)
+
+membuat attribut tabel bernama kata dengan tipe data varchar panjang 40 karakter, jika ingin tambah maka panggil kembali method field.
+•	a.field(‘Budaya’,’C’,’40’)
+•	a.record (‘Bandung’)
+
+mengisi tabel yang hanya 1 field dengan value Bandung. Jika ada dua field maka
+•	a.record(‘Bandung’,’Kota’)
+
+menyimpan file shapefile dikomputer
+•	a.save(‘namafile’)
+
+param writer
+•	Shapefile Polygon
+•	Shapefile Point
+•	Shapefile Plyline
+
+Kesimpulan
+Dalam penambahan data geospasial ini kita dapat menambahkan data dengan menambahkan attribut dari param writer yang sudah ada. Dengan memasukan data geospasial dengan berbentuk point, polygon, dan polyline.
+
+Saran
+Sebaiknya ada lebih banyak orang yang mempelajari dan menggunakan data data yang seperti diatas saya tulis. Banyak orang yang mengerti tentang menambahkan data geospasial. 
